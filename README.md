@@ -34,8 +34,8 @@ The advanced version was made by unlike basic version was developed by human han
 
 1. **`WeatherApp`**: The main component that encapsulates the overall functionality of the app.
 2. **`City Pins`**: Represents a city on the map.
-3. **`Weather box`**: Displays the weather information in a basic tooltip when a city is clicked.
-    ![Weather Box](Readme%20SS/Basic%20Weather%20box.png)
+3. **`Weather box`**: Displays the weather information in a basic tooltip when a city is clicked.</br>
+    </br>![Weather Box](Readme%20SS/Basic%20Weather%20box.png)
 
 ### Advanced Weather App (Weather App+) Components
 
@@ -43,13 +43,13 @@ The advanced version was made by unlike basic version was developed by human han
 2. **`Earth`**: Renders an interactive 3D Earth with city markers using Three.js and @react-three/fiber with high reseloution, better pins and design.
 3. **`City`**: Similar to the basic version but includes advanced interactions for 3D visualization.
 4. **`Tooltip`**: Enhanced tooltip with detailed weather information, hovering effect and glitch effects.
-5. **`WeatherInfo`**: Handles fetching weather information from the OpenWeatherMap API.
-    ![Weather Info](Readme%20SS/Adv%20Tooltip.png)
-6. **`WeatherIcon`**: Displays weather icons based on the fetched weather data.
-7. **`Weather Modal`**: A detailed Modal is that includes much more information about a city.
-    ![Weather Modal](Readme%20SS/Adv%20Modal.png)
-8. **`Versatile Search box`**: Device responsive search box with amazing design and functionalities.
-    ![Search Box](Readme%20SS/Adv%20Search.png)
+5. **`WeatherInfo`**: Handles fetching weather information from the OpenWeatherMap API.</br>
+    </br>![Weather Info](Readme%20SS/Adv%20Tooltip.png) </br>
+6. **`WeatherIcon`**: Displays weather icons based on the fetched weather data.</br>
+7. **`Weather Modal`**: A detailed Modal is that includes much more information about a city.</br>
+    </br>![Weather Modal](Readme%20SS/Adv%20Modal.png)</br>
+8. **`Versatile Search box`**: Device responsive search box with amazing design and functionalities.</br>
+    </br>![Search Box](Readme%20SS/Adv%20Search.png)
 
 ## Project Setup
 
