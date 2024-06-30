@@ -7,6 +7,8 @@ Weather App is a web-based application that provides weather information for cit
 
 ### Basic Weather App
 
+![Weather App](Readme%20SS/Basic%20Weather.png)
+
 The basic version was completely build by ChatGPT. This basic version of the Weather App provides the following features:
 
 - **City Weather Information**: Displays weather details including temperature, humidity, weather.
@@ -14,6 +16,8 @@ The basic version was completely build by ChatGPT. This basic version of the Wea
 - **Static Weather Box**: Basic tootltip nothing much. Displays the necessary information.
 
 ### Advanced Weather App (Weather App+)
+
+![Weather App](Readme%20SS/Adv%20Weather.png)
 
 The advanced version was made by unlike basic version was developed by human hands and it enhance its UI to a level beyond. It is moslty focused on futuristic Sci-fi design having animations and components which boosts the user experience. This advanced version, known as Weather App+, extends the functionality of the basic app with additional features:
 
@@ -31,6 +35,7 @@ The advanced version was made by unlike basic version was developed by human han
 1. **`WeatherApp`**: The main component that encapsulates the overall functionality of the app.
 2. **`City Pins`**: Represents a city on the map.
 3. **`Weather box`**: Displays the weather information in a basic tooltip when a city is clicked.
+    ![Weather Box](Readme%20SS/Basic%20Weather%20box.png)
 
 ### Advanced Weather App (Weather App+) Components
 
@@ -39,9 +44,12 @@ The advanced version was made by unlike basic version was developed by human han
 3. **`City`**: Similar to the basic version but includes advanced interactions for 3D visualization.
 4. **`Tooltip`**: Enhanced tooltip with detailed weather information, hovering effect and glitch effects.
 5. **`WeatherInfo`**: Handles fetching weather information from the OpenWeatherMap API.
+    ![Weather Info](Readme%20SS/Adv%20Tooltip.png)
 6. **`WeatherIcon`**: Displays weather icons based on the fetched weather data.
-7. **`Weaether Modal`**: A detailed Modal is that includes much more information about a city.
-8. **`Versatile Search box`**: Device responsive search box with amazing design and funtionalities.
+7. **`Weather Modal`**: A detailed Modal is that includes much more information about a city.
+    ![Weather Modal](Readme%20SS/Adv%20Modal.png)
+8. **`Versatile Search box`**: Device responsive search box with amazing design and functionalities.
+    ![Search Box](Readme%20SS/Adv%20Search.png)
 
 ## Project Setup
 
