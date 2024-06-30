@@ -1,0 +1,125 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --light: hsl(220, 50%, 90%);
+  --primary: hsl(255, 30%, 55%);
+  --focus: hsl(210, 90%, 50%);
+  --border-color: hsla(0, 0%, 100%, .2);
+  --global-background: hsl(220, 25%, 10%);
+}
+
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-container.active {
+  display: flex;
+}
+
+.modal {
+  width: 31rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(7, 14, 20, 0.9);
+  border: 1px solid #0f2848;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #e1effa;
+  font-family: "Orbitron", sans-serif;
+  text-align: left;
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #0f2848;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #0cf;
+  text-shadow: 0 0 1rem #0cf;
+}
+
+.modal__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.weather-icon {
+  width: 4rem;
+  height: 4rem;
+  display: block;
+  background-color: #68c6eb;
+  border-radius: 40px;
+  margin-right: 1rem;
+}
+
+.modal__content {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  line-height: 200%;
+}
+
+.modal__text {
+  margin-bottom: 0.5rem;
+}
+
+.modal__btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.modal__btn {
+  padding: 0.8rem 1.4rem;
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  color: #e1effa;
+  background: #0a2a48;
+  font-size: 1.2rem;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: .1rem;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.modal__btn:hover,
+.modal__btn:focus {
+  background: #0cf;
+  border-color: #0cf;
+  transform: translateY(-0.1rem); 
+  box-shadow: 0 0 1rem #0cf;
+}
+
+.link-2 {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #e1effa;
+  cursor: pointer;
+}
+
+.link-2:hover,
+.link-2:focus {
+  color: #ff4c4c;
+}

@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import Earth from './Components/Earth.js';
+import WeatherInfo from './Components/WeatherInfo'; 
+import { Link } from 'react-router-dom'; 
+import './App.css'; 
+import Advanced from './ComponentsAdv/AdvanceW.js'
 
 function App() {
+
+  const [selectedCity, setSelectedCity] = useState(null)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="full-screen" >
+      <h1>3D Interactive Weather App</h1>
+      
+      <Earth onClickCity={setSelectedCity} />
     </div>
+    
+        <Link to="/advanced">
+        <button>Advance</button>
+        </Link>
+      
+         <div className="weather-overlay">
+      <WeatherInfo city={selectedCity} />
+      </div> 
+      
+    </>
   );
 }
 

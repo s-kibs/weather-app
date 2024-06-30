@@ -1,0 +1,213 @@
+/* src/AdvanceW.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap'); /* Sci-fi font */
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+}
+
+.splash-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.85);
+  transition: opacity 1s ease-in-out; 
+  opacity: 1;
+  z-index: 10;
+}
+
+.splash-overlay.fade-out {
+  opacity: 0; 
+}
+
+.splash-screen h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 350%;
+  font-weight: normal;
+  letter-spacing: 0.5rem;
+  color: white;
+}
+.char {
+  color: #fff;
+  transition: color ease-out 0.3s, text-shadow ease-out 0.3s;
+  text-shadow: 0 0 4rem #fff;
+}
+
+.char.fade-in {
+  color: #0cf;
+  text-shadow: 0 0 1rem #0cf;
+}
+
+.main-content {
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0; 
+    transition: opacity 1.5s ease-in-out; 
+    text-align: left; 
+    animation: glitch 1s steps(2, end) infinite;
+    color: #0cf;
+    text-shadow: 0 0 1rem #0cf;
+  }
+  
+  .main-content.fade-in {
+    opacity: 1;
+  }
+
+
+  .tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip {
+  position: relative;
+  background-color: rgba(7, 14, 20, 0.765);
+  border: 1px solid #0f2848; 
+  padding: 5px 20px 23px 20px;
+  width: 310px;
+  height: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #e1effa; /* Font color */
+  font-family: "Orbitron", sans-serif;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.tooltip-header {
+  display: flex;
+  color: #0cf;
+  text-shadow: 0 0 1rem #0cf;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #0f2848; /* Border color for separation */
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.tooltip-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tooltip-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-color: #68c6eb;
+  border-radius: 40px;
+}
+
+.tooltip-temp {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #0a2a48; /* Background color for temperature */
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+.tooltip-content {
+  font-size: 15px;
+  line-height: 180%;
+  margin-top: 5px;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(18, 41, 66, 0.9) transparent transparent transparent; /* Arrow color */
+}
+
+
+@keyframes stack {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+  }
+  60% {
+    opacity: 0.5;
+    transform: translateX(50%);
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    transform: translate(var(--glitch-translate));
+  }
+  2% {
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  4%, 100% {  
+    text-shadow: none; 
+    transform: none; 
+  }
+}
+
+
+.tooltip {
+  animation: glitch 1s steps(2, end) infinite;
+}
+
+.tooltip span {
+  display: inline-block;
+  animation: glitch 2s ease infinite alternate-reverse;
+}
+
+.tooltip span:nth-child(odd) { 
+  --glitch-translate: 2px; 
+}
+.tooltip span:nth-child(even) { 
+  --glitch-translate: -2px; 
+}
+
+
+@media (max-width: 768px) {
+  .tooltip {
+    width: 220px;
+    height: 150px;
+  }
+
+  .tooltip-title {
+    font-size: 14px;
+  }
+
+  .tooltip-icon {
+    width: 25px; /* Adjust icon size for smaller screens */
+    height: 25px;
+  }
+
+  .tooltip-temp {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 2px; /* Adjust padding for smaller screens */
+  }
+
+  .tooltip-content {
+    font-size: 11px; /* Adjust font size for smaller screens */
+  }
+}
