@@ -1,6 +1,5 @@
 # Weather App
-
-An alien friendly Weather App 😊
+An alien friendly ![Weather App](weather-app-ps.vercel.app) 😊
 Weather App is a web-based application that provides weather information for cities around the globe. The app offers basic and advanced versions, with the advanced version featuring more sophisticated functionalities and an interactive 3D Earth visualization. As humans inhabit more planets we will add each one of them in this Weather App covering the Solar System and beyond.
 
 ## Features
